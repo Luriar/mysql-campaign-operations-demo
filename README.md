@@ -37,3 +37,14 @@ Python 3.10 이상을 권장합니다. 외부 API 키나 실서비스 계정이 
 - [전체 인턴 및 프로젝트 목록](https://github.com/Luriar/dinostudio-internship-portfolio)
 
 **주의:** 이 공개 코드는 기존 회사 프로젝트를 이전하거나 일부 수정하여 공개한 것이 아닙니다. 실제 업무 수행 내용은 설명하되 고객 데이터나 정량 성과를 공개하지 않습니다.
+
+## 실행 가능한 트랜잭션 및 백업 데모
+
+`operations.py`는 가상 데이터를 기반으로 트랜잭션 입력과 롤백, 중복 제거, 응답 완료 대상 제외, 메시지 수정 및 SQLite 백업을 구현합니다. 2024년의 MySQL 원본 코드와 스키마는 사용하지 않았습니다.
+
+```bash
+python operations.py
+python -m unittest discover -s tests -v
+```
+
+[기술 구성](docs/OPERATIONS.md)
